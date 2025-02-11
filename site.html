@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квест: Кодовое слово</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        input, button { padding: 10px; margin: 10px; }
+    </style>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById('password').value.toLowerCase();
+            var correctAnswers = ['тирамису', 'чизкейк', 'эклер', 'крем-брюле', 'мусс', 'пирожное', 'торт', 'панакота', 'макарун', 'суфле'];
+            if (correctAnswers.includes(password)) {
+                alert('Правильный ответ! Найди следующую подсказку в книге.');
+            } else {
+                alert('Неверно! Попробуй ещё.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Введите кодовое слово</h1>
+    <p>Подсказка: один из 10 вкуснейших десертов.</p>
+    <input type="text" id="password" placeholder="Введите слово">
+    <button onclick="checkPassword()">Проверить</button>
+</body>
+</html>
+

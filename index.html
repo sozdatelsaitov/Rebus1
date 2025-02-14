@@ -12,6 +12,7 @@
         function checkPassword() {
             var password = document.getElementById('password').value.toLowerCase();
             var correctAnswers = ['тирамису', 'чизкейк', 'эклер', 'крем-брюле', 'мусс', 'пирожное', 'торт', 'панакота', 'макарун', 'суфле'];
+            concole.log(correctAnswers);
             if (correctAnswers.includes(password)) {
                 alert('Правильный ответ! Найди следующую подсказку в книге.');
             } else {

@@ -7,13 +7,13 @@
     <style>
         body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
         input, button { padding: 10px; margin: 10px; }
-        h1{ color: green;}
+        h1{ color: red;}
     </style>
     <script>
         function checkPassword() {
             var password = document.getElementById('password').value.toLowerCase();
             var correctAnswers = ['тирамису', 'чизкейк', 'эклер', 'крем-брюле', 'мусс', 'пирожное', 'торт', 'панакота', 'макарун', 'суфле'];
-            concole.log(correctAnswers);
+            console.log(correctAnswers);
             if (correctAnswers.includes(password)) {
                 alert('Правильный ответ! Найди следующую подсказку в книге.');
             } else {
